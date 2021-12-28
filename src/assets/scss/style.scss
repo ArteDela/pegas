@@ -1,0 +1,52 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+/* mixins */
+@import 'base/mixins.scss';
+
+/* base */
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/default';
+
+/* blocks */
+ @import 'blocks/header/header';
+ @import 'blocks/dop-header/dop-header';
+ @import 'blocks/footer/footer';
+ @import 'blocks/g-select/g-select';
+ @import 'blocks/head-content/head-content';
+ @import 'blocks/advantages/advantages';
+ @import 'blocks/reviews/reviews';
+ @import 'blocks/slider/owl.carousel.min';
+ @import 'blocks/g-popup/g-popup';
+ @import 'blocks/partners/partners';
+ @import 'blocks/address/address';
+ @import 'blocks/breadcrumps/breadcrumps';
+ @import 'blocks/contacts/contacts';
+ @import 'blocks/questions/questions';
+ @import 'blocks/about-work/about-work';
+ @import 'blocks/about-advantages/about-advantages';
+ @import 'blocks/princips/princips';
+/* pages */
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	&:before,
+	&:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+html
+{
+	line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+}

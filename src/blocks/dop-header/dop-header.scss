@@ -1,0 +1,17 @@
+.header.dop-header
+{
+	background: linear-gradient(180deg, #A1BFD7 0%, #3E90D3 100%);
+	position: relative;
+	margin-bottom: 80px;
+	.header__item
+	{
+		a
+		{
+			&:nth-child(2){margin: 0 5px;}
+		}
+	}
+	.header__item-label
+	{
+		width: 105px;
+	}
+}
