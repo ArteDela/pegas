@@ -12,10 +12,14 @@
 						<a href="#">{% include 'assets/img/inst.svg' %}</a>
 					</li>
 					<li class="header__item">
-						<label for="" class="header__item-label">
+						<div for="" class="header__item-label" onclick="pegas.dopHeader.openFinder(this)">
 							<input type="text" class="header__item-input">
 							{% include 'assets/img/finder.svg' %}
-						</label>
+							<label for="" class="header__item-label-inner">
+								<input type="text" class="header__item-input-open" placeholder="введите запрос">
+								{% include 'assets/img/finder.svg' %}
+							</label>
+						</div>
 					</li>
 					<li class="header__item">
 						{% include 'blocks/g-select/g-select.twig' %}

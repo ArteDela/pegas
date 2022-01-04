@@ -7,11 +7,12 @@ pegas.gPopup =
 		let popupHtml = $(`.${contentClass}`).html();
 		$('._overlay').addClass('open').html(popupHtml);
 		$('body').css({overflow:'hidden'});
+		$('html').css({overflow:'hidden'});
 		this.setEscEvent();
-		console.log(popupHtml)
 
 		let $popup = $('._overlay').find('._popup-content')
 		let self = this;
+		pegas.innputMask();
 		setTimeout(function()
 		{
 			self.outListener = pegas.clickOutside($popup, () => {
@@ -23,6 +24,10 @@ pegas.gPopup =
 	{
 		$('._overlay').removeClass('open');
 		$('body').css({overflow:'auto'});
+		$('html').css({overflow:'auto'});
+		$('.success').removeClass('show');
+		$('.questions__title').show();
+		$('.questions__descr').show();
 		this.removeListner();
 	},
 	removeListner()

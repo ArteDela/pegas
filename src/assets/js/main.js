@@ -21,6 +21,7 @@ const pegas =
 		this.partners.initSlider();
 		this.address.init();
 		this.innputMask();
+		this.catalogBannerSlider.init();
 	},
 	/**
 	* отслеживание клика вне блока

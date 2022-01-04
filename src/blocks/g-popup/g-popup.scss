@@ -34,7 +34,6 @@
 	box-shadow: 0 4px 10px rgba(0,0,0,.08);
 	overflow: auto;
 	position: relative;
-	display: none;
 	iframe
 	{
 		width: 100%;
@@ -43,6 +42,10 @@
 	}
 	.ytp-cued-thumbnail-overlay-image{z-index: 111;}
 	&.active{display: block;}
+}
+.g-popup__content--video
+{
+	display: none;
 }
 .g-popup__clsoe
 {

@@ -5,13 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "check": "node check.js",
     "dev": "gulp",
     "build": "gulp build"
   },
-  "pre-commit": [
-    "check"
-  ],
+  // "pre-commit": [
+  //   "check"
+  // ],
   "author": "pegas",
   "license": "ISC",
   "devDependencies": {

@@ -54,9 +54,9 @@ pegas.address =
 		pegas.address.myMap.geoObjects.add(new ymaps.Placemark(pegas.address.coordinates, {
 			iconCaption: pegas.address.mapText
 		}, {
-			preset: 'islands#icon',
+			preset: 'islands#icon',//удалить
 			iconColor: '#FF00FF',
-			// iconImageHref: 'images/myIcon.gif'
+			// iconImageHref: 'images/myIcon.gif'//кастомная картинка
 		}));
 	}
 };
