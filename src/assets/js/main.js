@@ -46,5 +46,6 @@ const pegas =
 	innputMask()
 	{
 		$('._phone-mask').mask('+7(999)999-99-99',{autoclear: false});
-	}
+	},
+	maskValue: val => (val+'').replace(/\D/g,'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g,'$1 '),
 };

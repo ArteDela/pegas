@@ -8,9 +8,6 @@
     "dev": "gulp",
     "build": "gulp build"
   },
-  // "pre-commit": [
-  //   "check"
-  // ],
   "author": "pegas",
   "license": "ISC",
   "devDependencies": {

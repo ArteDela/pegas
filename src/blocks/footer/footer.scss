@@ -148,3 +148,7 @@ span.footer__row-finder-text
 	display: block;
 	text-align: right;
 }
+@media (max-width: 1300px)
+{
+	.footer__row{justify-content: start;}
+}

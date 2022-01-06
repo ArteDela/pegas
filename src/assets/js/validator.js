@@ -58,7 +58,7 @@ class PegasValidator
 				let $textarea = $(field).find('textarea');
 				if($input.val() == '' || $textarea.val() =='')
 				{
-					this.setMessage(field,'Заполните поле');
+					this.setMessage(field,'Поле заполнено некорректно');
 					return false;
 				}
 				return true;
@@ -68,7 +68,7 @@ class PegasValidator
 				let $input = $(field).find('input');
 				if($input.val() == '')
 				{
-					this.setMessage(field,'Заполните поле');
+					this.setMessage(field,'Поле заполнено некорректно');
 					return false;
 				}
 				return true;

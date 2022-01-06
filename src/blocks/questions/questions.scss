@@ -53,6 +53,19 @@
 			&:nth-child(2){margin: 0 5px;}
 		}
 	}
+	.success__link
+	{
+		height: 60px;
+		line-height: 60px;
+		background: #FF9356;
+		font-weight: normal;
+		font-size: 16px;
+		color: #FFFFFF;
+		margin-bottom: 40px;
+		padding: 0 50px;
+		border-radius: 50px;
+		display: inline-block;
+	}
 	&.show{display: block;}
 }
 .questions
