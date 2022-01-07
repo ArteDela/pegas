@@ -1,5 +1,6 @@
 .order
 {
+	margin-bottom: 80px;
 	.g-tabs__content{width: 100%;}
 	.g-tabs__content-item
 	{
@@ -86,6 +87,59 @@
 	flex-basis: 46%;
 	// input{flex-basis: 35%}
 }
+.oreder__submit
+{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	.questions__btn
+	{
+		display: inline-block;
+		flex-basis: 14.2%;
+		margin-right: 20px;
+	}
+	.g-checkbox
+	{
+		flex-basis: 52.3%;
+	}
+	.g-checkbox__body
+	{
+		width: 100%;
+		.g-checkbox__text
+		{
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 152.8%;
+			max-width: 100%;
+		}
+	}
+	.g-checkbox__box
+	{
+		border: 1px solid #424242;
+	}
+	.g-checkbox__input:enabled~.g-checkbox__body .g-checkbox__box
+	{
+		border-color: #424242;
+	}
+	.g-checkbox__input:enabled:checked~.g-checkbox__body .g-checkbox__text
+	{
+		color: #424242;
+	}
+	.g-checkbox__input:enabled:checked~.g-checkbox__body .g-checkbox__box
+	{
+		background-image: url(img/check-black.svg);
+	}
+	.g-checkbox__input:enabled~.g-checkbox__body .g-checkbox__text
+	{
+		color: #424242;
+		a
+		{
+			color: #424242;
+			font-weight: bold;
+		}
+	}
+}
 @media (max-width: 1310px)
 {
 	.order__flex
@@ -110,5 +164,13 @@
 	{
 		width: 100%;
 		margin-bottom: 10px;
+	}
+	.oreder__submit
+	{
+		flex-direction: column;
+		.questions__btn
+		{
+			margin-bottom: 20px;
+		}
 	}
 }

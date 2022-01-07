@@ -338,3 +338,48 @@ label.g-radio--btn
 .catalog__title{text-align: center;}
 
 .catalog__content-items{padding: 0;}
+
+
+
+.not-found
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 60px;
+	img{margin-bottom: 60px;}
+}
+.not-found__title
+{
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 65px;
+	color: #424242;
+	margin: 0;
+	margin-bottom: 30px;
+}
+.not-found__descr
+{
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 49px;
+	color: #424242;
+	a
+	{
+		color:#6195BE;
+		text-decoration: underline;
+	}
+}
+@media (max-width: 1200px)
+{
+	.not-found img{width: 700px;}
+	.not-found__title
+	{
+		font-size: 30px;
+	}
+	.not-found__descr
+	{
+		font-size: 24px;
+	}
+}

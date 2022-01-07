@@ -44,6 +44,7 @@
  @import 'blocks/detail-rev-popup/detail-rev-popup';
  @import 'blocks/cart/cart';
  @import 'blocks/order/order';
+ @import 'blocks/cart-success/cart-success';
 /* pages */
 
 
@@ -66,4 +67,42 @@ html
 	color: $mainFontColor;
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
+}
+
+
+.g-ul
+{
+	padding: 0;
+	margin-bottom: 60px;
+	.g-li
+	{
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 150%;
+		color: #424242;
+		&:not(:last-child){margin-bottom: 25px;}
+	}
+	.g-li--inner
+	{
+		.g-li
+		{
+			&:not(:last-child){margin-bottom: 4px;}
+		}
+	}
+}
+.g__descr
+{
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 150%;
+	color: #424242;
+	margin-bottom: 60px;
+}
+.g-title
+{
+	span
+	{
+		color:#424242;
+		font-weight: bold;
+	}
 }

@@ -151,4 +151,20 @@ span.footer__row-finder-text
 @media (max-width: 1300px)
 {
 	.footer__row{justify-content: start;}
+	.footer__row-links-list
+	{
+		text-align: right;
+		width: 100%;
+		li{width: 100%;}
+	}
+	.footer__row-links-privaci
+	{
+		display: block;
+		text-align: right;
+		margin-bottom: 50px;
+	}
+	.footer__row-finder-label
+	{
+		margin: 0 auto;
+	}
 }
