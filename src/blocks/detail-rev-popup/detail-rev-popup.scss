@@ -1,13 +1,30 @@
 .detail-rev-popup__content
 {
+	position: relative;
 	padding: 110px 150px;
 	background-image: url('img/bg-detail.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	overflow-y: scroll;
 	.success
 	{
 		max-width: 564px;
+	}
+	.detail-rev-popup__content-close
+	{
+		position: absolute;
+		top: 80px;
+		right: 150px;
+		svg
+		{
+			path
+			{
+				fill:#FFFFFF;
+			}
+		}
 	}
 }
 .detail-rev-popup__content-title

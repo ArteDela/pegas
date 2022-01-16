@@ -81,7 +81,7 @@
 		{
 			height: 100%;
 			width: 400px;
-			padding-right: 10px;
+			padding: 0 27px;
 		}
 		.g-select__selected-name
 		{
@@ -102,15 +102,24 @@
 }
 @media (max-width: 1199px)
 {
-	.catalog-sort__first{padding: 0;}
+	.catalog-sort__first
+	{
+		padding: 0;
+		margin-bottom: 20px;
+		justify-content: center;
+		.catalog-sort__btn
+		{
+			margin-bottom: 20px;
+		}
+	}
+	.catalog-sort__flex
+	{
+		justify-content: center;
+	}
 	.catalog-sort
 	{
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-	}
-	.catalog-sort__first
-	{
-		margin-bottom: 20px;
 	}
 }

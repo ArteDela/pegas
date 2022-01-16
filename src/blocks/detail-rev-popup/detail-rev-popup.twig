@@ -1,5 +1,8 @@
 <div class="detail-rev-popup" style="display:none">
 	<div class="detail-rev-popup__content  _popup-content">
+		<div class="detail-rev-popup__content-close" onclick="pegas.gPopup.close()">
+			{% include "assets/img/close.svg" %}
+		</div>
 		<h2 class="detail-rev-popup__content-title">для того, чтобы оставить <span>свой отзыв</span> заполните данные ниже</h2>
 		<form class="detail-rev-popup__content-form" onsubmit="return pegas.detailRevPopup.submit(this)">
 			<div class="detail-rev-popup__content-flex">

@@ -2,7 +2,7 @@
 {
 	background: rgba(139, 203, 255, 0.55);
 	padding: 80px 0;
-	padding-top: calc(100vh - 150px);
+	padding-top: 350px;
 	background-image: url('./img/shoose.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -62,34 +62,35 @@
 }
 @media (max-width: 1500px)
 {
+	// .head-content__links
+	// {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	margin-bottom: 20px;
+	// 	justify-content: center;
+	// 	padding: 0;
+	// 	a
+	// 	{
+	// 		&:not(:last-child)
+	// 		{
+	// 			margin-right: 20px;
+	// 			margin-bottom: 0px;
+	// 		}
+	// 	}
+	// }
+}
+@media (max-width: 1200px)
+{
+	.head-content__links{display: none;}
+	.head-content
+	{
+		padding-top: 40px;
+	}
 	.head-content__row
 	{
 		flex-direction: column;
 	}
 	.head-content__content-link{flex-basis: 100%;}
-	.head-content__links
-	{
-		display: flex;
-		align-items: center;
-		margin-bottom: 20px;
-		justify-content: center;
-		padding: 0;
-		a
-		{
-			&:not(:last-child)
-			{
-				margin-right: 20px;
-				margin-bottom: 0px;
-			}
-		}
-	}
-}
-@media (max-width: 1090px)
-{
-	.head-content
-	{
-		padding-top: 40px;
-	}
 	.head-content__links
 	{
 

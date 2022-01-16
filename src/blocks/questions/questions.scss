@@ -77,7 +77,9 @@
 	width: 100%;
 	background-image: url('img/bg.png');
 	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	&.pr{padding-right: 180px;}
+	.g-checkbox__text{width: 167px;}
 }
 .questions__title
 {
@@ -118,7 +120,9 @@
 	{
 		position: absolute;
 		bottom: -30px;
-		right: 80px;
+		right: 1px;
+		width: 100%;
+		text-align: center;
 		font-weight: bold;
 		font-size: 14px;
 		line-height: 152.8%;
@@ -181,4 +185,14 @@
 	font-weight: normal;
 	font-size: 16px;
 	color: #FFFFFF;
+}
+@media (max-width: 1024px)
+{
+	.questions
+	{
+		padding: 80px;
+		background-size: cover;
+		overflow: hidden;
+		border-radius:85px;
+	}
 }

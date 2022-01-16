@@ -86,3 +86,15 @@
 		text-transform: uppercase;
 	}
 }
+@media (max-width: 1199px)
+{
+	.catalog-sidebar__item
+	{
+		justify-content: start;
+		span
+		{
+			display: block;
+			margin-right: 10px;
+		}
+	}
+}

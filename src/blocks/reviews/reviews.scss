@@ -318,6 +318,10 @@
 		{
 			width: 65%;
 		}
+		.g-tabs__menu
+		{
+			justify-content: center;
+		}
 	}
 	.reviews__video-img
 	{
@@ -335,9 +339,17 @@
 	.g-tabs__item
 	{
 		margin: 0 10px;
+		font-size: 14px;
+		// width: 100%;
 	}
 }
 @media (max-width: 900px)
 {
 	.reviews__title{font-size: 29px}
+	.g-tabs__item
+	{
+		margin: 0 10px;
+		font-size: 14px;
+		width: 100%;
+	}
 }
