@@ -21,11 +21,18 @@ const pegas =
 		this.partners.initSlider();
 		this.address.init();
 		this.innputMask();
+		// this.customScrokll();
 		this.catalogBannerSlider.init();
 	},
 	/**
 	* отслеживание клика вне блока
 	*/
+	customScrokll()
+	{
+		$('textarea').jScrollPane({ //На какой элемент задаем прокрутку
+			showArrows: false //показать стрелки
+		});
+	},
 	clickOutside(element, callback)
 	{
 		const outsideChecker = (event) =>

@@ -1,6 +1,6 @@
 <header class="dop-header header">
 	<div class="container">
-		<div class="header__row row">
+		<div class="header__row header__desctop row">
 			<a href="#" class="col-lg-2 col-sm-2 header__logo">
 				{% include 'assets/img/logo.svg' %}
 			</a>
@@ -97,6 +97,92 @@
 					</li>
 					<li class="header__mobile-menu-item">
 						<a href="#">КОНТАКТЫ</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="header__mob">
+			<div class="header__mob-top">
+				<div class="header__mob-first">
+					<div class="header__mob-burger" onclick="pegas.header.showMobMenu(this)">
+						<div class="header__mob-burger-item"></div>
+						<div class="header__mob-burger-item"></div>
+						<div class="header__mob-burger-item"></div>
+					</div>
+					<div class="header__mob-logo">
+						<img src="img/logo-mob.svg" alt="">
+						{# {% include 'assets/img/logo-mob.svg' %} #}
+					</div>
+				</div>
+				<div class="header__mob-last">
+					<div class="header__item-label header__item-label--dop" onclick="pegas.dopHeader.openFinder(this)">
+						<input type="text" class="header__item-input">
+						{% include 'assets/img/finder.svg' %}
+						<label for="" class="header__item-label-inner">
+							<input type="text" class="header__item-input-open" placeholder="введите запрос">
+							{% include 'assets/img/finder.svg' %}
+						</label>
+					</div>
+					{# <div class="header__mob-finde">
+						{% include 'assets/img/finder.svg' %}
+					</div> #}
+					<div class="header__mob-like">
+						{% include 'assets/img/like.svg' %}
+					</div>
+					<div class="header__item-basket-block header__mob-cart">
+						{% include 'assets/img/basket.svg' %}
+						<div class="header__item-basket-counter">1</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__mob-bottom">
+				<ul class="header__list">
+					<li class="header__item">
+						{% include 'blocks/g-select/g-select.twig' %}
+					</li>
+					<li class="header__item">
+						{% include 'assets/img/phone.svg' %}
+						<a class="header__item-link" href="tel:74162211700">+7 (4162) 211 700</a>
+					</li>
+				</ul>
+				<ul class="header__list">
+					<li class="header__item">
+						<a href="#" class="header__item-link">
+							каталог
+						</a>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__item-link">
+							кинезиоцентр
+						</a>
+					</li>
+					<li class="header__item header__item--dropDown _header__item">
+						<a href="javascript:void(0)" class="header__item-link" onclick="pegas.header.showInfo(this)">о компании</a>
+						{% include "assets/img/arrod-down.svg" %}
+						<ul class="header__item-list">
+							<li class="header__item-item">
+								<a href="#">О нас</a>
+							</li>
+							<li class="header__item-item">
+								<a href="#">правила магазина</a>
+							</li>
+						</ul>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__item-link">
+							контакты
+						</a>
+					</li>
+				</ul>
+				<ul class="header__list">
+					<li class="header__item">
+						<a href="https://www.instagram.com/pegas_orto/">{% include 'assets/img/inst.svg' %}</a>
+					</li>
+					<li class="header__item">
+						<a href="https://ok.ru/profile/583969502001">{% include 'assets/img/odnok.svg' %}</a>
+					</li>
+					<li class="header__item header__item--dropDown _header__item">
+						<a href="https://www.instagram.com/bereginya_blag/">{% include 'assets/img/inst.svg' %}</a>
 					</li>
 				</ul>
 			</div>

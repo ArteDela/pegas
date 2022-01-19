@@ -165,6 +165,48 @@
 		}
 	}
 }
+.detail-information__params-flex--color
+{
+	label.g-radio
+	{
+		.g-radio__input:enabled~.g-radio__body .g-radio__box
+		{
+			position: relative;
+			&::after
+			{
+				content: '';
+				position: absolute;
+				top: -10px;
+				left: -12px;
+				width: 105px;
+				height: 75px;
+				border: 1px solid transparent;
+				border-radius: 35px;
+			}
+		}
+		&:first-child
+		{
+			.g-radio__box
+			{
+				background: #9B715F;
+			}
+		}
+		&:last-child
+		{
+			.g-radio__box
+			{
+				background: black;
+			}
+		}
+	}
+	label.g-radio .g-radio__input:enabled:checked~.g-radio__body .g-radio__box
+	{
+		&:after
+		{
+			border: 1px solid #89AFCE;
+		}
+	}
+}
 .detail-information__params-color
 {
 	width: 85px;
